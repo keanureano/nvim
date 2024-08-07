@@ -2,7 +2,6 @@ if vim.g.vscode then
   -- This is the VSCode extension environment
 
   -- Use system clipboard for copy/paste operations
-  ---@diagnostic disable-next-line: undefined-field
   vim.opt.clipboard:append("unnamedplus")
 else
   -- This is the ordinary Neovim environment
