@@ -4,8 +4,8 @@
 vim.keymap.set(
   "n",
   "<leader>si",
-  ":cd $LOCALAPPDATA/nvim | :Telescope find_files <Enter>",
+  ":cd $LOCALAPPDATA\\nvim | :Telescope find_files <Enter>",
   { noremap = true, silent = true, desc = "Search Init Files" }
 )
 
-vim.keymap.set("n", "<leader>se", ":cd D:/Code/", { noremap = true, desc = "Search Explorer" })
+vim.keymap.set("n", "<leader>se", ":cd D:\\Code\\", { noremap = true, desc = "Search Explorer" })
