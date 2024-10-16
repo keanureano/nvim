@@ -7,6 +7,8 @@ if vim.g.vscode then
   -- Rebind changing tab keys
   vim.api.nvim_set_keymap("n", "<C-h>", "<Cmd>Tabprevious<CR>", { noremap = true, silent = true })
   vim.api.nvim_set_keymap("n", "<C-l>", "<Cmd>Tabnext<CR>", { noremap = true, silent = true })
+  vim.api.nvim_set_keymap("n", "j", ":call VSCodeCall('cursorDown')<CR>", { noremap = true, silent = true })
+  vim.api.nvim_set_keymap("n", "k", ":call VSCodeCall('cursorUp')<CR>", { noremap = true, silent = true })
 else
   -- This is the ordinary Neovim environment
 
